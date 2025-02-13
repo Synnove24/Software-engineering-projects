@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyHelloKittyQuiz</string>
+    <string name="question1">Hello Kitty is a cat from London</string>
+    <string name="question2">Alex is wearing a flannel</string>
+    <string name="question3">Rafa drinks a lot of water</string>
+    <string name="question4">Erin does not like to cross county ski</string>
+    <string name="true_text">This is true</string>
+    <string name="false_text">This is false</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+    <string name="warning_text">You are about to be a cheater! Do you want to proceed?</string>
+    <string name="cheat_button">LET ME CHEAT!</string>
+    <string name="show_answer">Show me the answer anyway!!</string>
+    <string name="judgment_toast">Cheating is wrong! You are a bad person.</string>
+</resources>
