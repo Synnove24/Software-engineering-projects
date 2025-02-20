@@ -35,6 +35,9 @@ public class AutoPerson extends Person {
 		}
 	}
 	
+	
+	
+	//testing
 	public void act() {
 		List<Place> neighbors = getPlace().neighbors();
 		if (!neighbors.isEmpty()) {
