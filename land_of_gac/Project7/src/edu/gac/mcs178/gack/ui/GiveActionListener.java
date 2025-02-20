@@ -92,8 +92,8 @@ class GiveAction extends AbstractAction  {
 		if (enabled) {
 			if (recipient.getName() == "Max") {
 				if (item.getName() == "Late Lab Report") {
-					player.give(item);	
-					gui.displayMessage(" give " + item + " to " + recipient);
+					player.give(item, recipient);	
+					gui.displayMessage(player + "gave " + item + " to " + recipient);
 				}
 			}
 			else {
