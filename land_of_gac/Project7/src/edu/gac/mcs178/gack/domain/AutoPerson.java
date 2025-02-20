@@ -7,6 +7,8 @@ import edu.gac.mcs178.gack.Utility;
 
 public class AutoPerson extends Person {
 	
+	//SHARED VERSION
+	
 	private static Registry registry;
 	
 	public static Registry getRegistry() {
@@ -35,9 +37,6 @@ public class AutoPerson extends Person {
 		}
 	}
 	
-	
-	
-	//testing
 	public void act() {
 		List<Place> neighbors = getPlace().neighbors();
 		if (!neighbors.isEmpty()) {
