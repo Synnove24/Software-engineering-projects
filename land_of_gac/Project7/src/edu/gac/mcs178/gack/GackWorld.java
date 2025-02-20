@@ -24,6 +24,7 @@ public class GackWorld extends World {
 		Place dormitory = new Place("Dormitory");
 		Place pond = new Place("Pond");
 		Place lund = new Place("Lund"); //added lund
+		//comment
 		
 		foodService.addNewNeighbor("down", po);
 		po.addNewNeighbor("south", alumniHall);
@@ -63,7 +64,8 @@ public class GackWorld extends World {
 			library.gain(new Scroll(title));
 		}
 		
-		// kirstin testing
+		
+		
 		
 		computerLab.gain(new Scroll("Unix Programmers Manual"));
 		computerLab.gain(new Scroll("NeXT User's Reference"));
