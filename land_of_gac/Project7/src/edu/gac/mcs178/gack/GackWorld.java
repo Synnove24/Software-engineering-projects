@@ -62,6 +62,9 @@ public class GackWorld extends World {
 		for (String title : someTitles) {
 			library.gain(new Scroll(title));
 		}
+		
+		// kirstin testing
+		
 		computerLab.gain(new Scroll("Unix Programmers Manual"));
 		computerLab.gain(new Scroll("NeXT User's Reference"));
 		dormitory.gain(new Scroll("late Lab Report"));
