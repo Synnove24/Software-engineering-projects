@@ -8,6 +8,8 @@ import edu.gac.mcs178.gack.Utility;
 public class AutoPerson extends Person {
 	
 	//SHARED VERSION
+	//synnoves test lol 
+	//hi
 	
 	private static Registry registry;
 	
