@@ -14,7 +14,7 @@ import edu.gac.mcs178.gack.domain.Thing;
 
 public class BeEatenActionListener implements ActionListener {
 	
-	private static final Thing INTSRUCTIONS = new Thing("Eat ...");
+	private static final Food INTSRUCTIONS = new Food("Eat ...");
 	
 	private GraphicalUserInterface gui;
 	private Person player;
@@ -95,10 +95,11 @@ class BeEatenAction extends AbstractAction  {
 	public void actionPerformed(ActionEvent event) {
 		if (enabled) {
 			if (food.getName() == "Chocolate") {
-				player.eat(food);	
-				gui.displayMessage(" I ate " + food);
+				player.eat(food);
+				gui.displayMessage("I ate " + food);
 			}
 		}
 		gui.playTurn();
 	}
-}
+	}
+	

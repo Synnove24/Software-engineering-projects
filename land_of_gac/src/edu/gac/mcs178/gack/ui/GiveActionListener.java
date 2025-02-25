@@ -8,6 +8,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JComboBox;
 import javax.swing.JPopupMenu;
 
+import edu.gac.mcs178.gack.domain.Food;
 import edu.gac.mcs178.gack.domain.Person;
 import edu.gac.mcs178.gack.domain.Thing;
 
@@ -21,6 +22,7 @@ public class GiveActionListener implements ActionListener {
 	private boolean enabled;
 	private List<Thing> things;
 	private List<Person> people;
+	private List<Food> foods;
 
 	public GiveActionListener(GraphicalUserInterface gui, Person player, JComboBox giveJComboBox) {
 		super();
@@ -79,6 +81,7 @@ class GiveAction extends AbstractAction  {
 	private Thing item;
 	private Person recipient;
 	private GraphicalUserInterface gui;
+	private Food food;
 	
 	public GiveAction(String name, Person player, Thing item, Person recipient, GraphicalUserInterface gui) {
 		super(name);
@@ -86,6 +89,7 @@ class GiveAction extends AbstractAction  {
 		this.item = item;
 		this.recipient = recipient;
 		this.gui = gui;
+		this.food = food;
 	}
 
 	public void actionPerformed(ActionEvent event) {

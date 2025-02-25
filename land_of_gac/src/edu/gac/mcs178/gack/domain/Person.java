@@ -137,7 +137,7 @@ public class Person {
 	//stay here and fix
 	public void eat(Food food) {
 		if ((food.isOwned()) && (food.getOwner().equals(this))) {
-			food.beEaten(food);
+			food.becomeUnowned(food);
 		} else {
 			Utility.displayMessage(this + " does not have " + food);
 		}
@@ -150,6 +150,16 @@ public class Person {
 			thing.becomeUnowned();
 			possessions.remove(thing);
 			say("I lose " + thing);
+		}
+	}
+	
+	public void lose(Food food) {
+		if (!equals(food.getOwner())) {
+			Utility.displayMessage(this + " doesn't have " + food);
+		} else {
+			food.becomeUnowned(food);
+			possessions.remove(food);
+			say("I lose " + food);
 		}
 	}
 	

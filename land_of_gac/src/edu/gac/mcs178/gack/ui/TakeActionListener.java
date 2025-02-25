@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.swing.JComboBox;
 
+import edu.gac.mcs178.gack.domain.Food;
 import edu.gac.mcs178.gack.domain.Person;
 import edu.gac.mcs178.gack.domain.Thing;
 
@@ -18,6 +19,7 @@ public class TakeActionListener implements ActionListener {
 	private JComboBox takeJComboBox;
 	private boolean enabled;
 	private List<Thing> things;
+	private List<Food> foods;
 
 	public TakeActionListener(GraphicalUserInterface gui, Person player, JComboBox takeJComboBox) {
 		super();

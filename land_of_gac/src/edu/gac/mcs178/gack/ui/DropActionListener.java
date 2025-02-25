@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.swing.JComboBox;
 
+import edu.gac.mcs178.gack.domain.Food;
 import edu.gac.mcs178.gack.domain.Person;
 import edu.gac.mcs178.gack.domain.Thing;
 
@@ -18,6 +19,7 @@ public class DropActionListener implements ActionListener {
 	private JComboBox dropJComboBox;
 	private boolean enabled;
 	private List<Thing> things;
+	private List<Food> foods;
 
 	public DropActionListener(GraphicalUserInterface gui, Person player, JComboBox dropJComboBox) {
 		super();
