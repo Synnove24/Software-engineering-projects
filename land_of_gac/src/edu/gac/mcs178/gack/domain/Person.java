@@ -122,8 +122,8 @@ public class Person {
 		}
 	}
 	
-	//move to food class
-	public void beEaten(Thing thing) {
+
+	/*public void beEaten(Thing thing) {
 		if (!equals(thing.getOwner())) {
 			Utility.displayMessage(this + " doesn't have " + thing);
 		} else {
@@ -132,16 +132,16 @@ public class Person {
 			say("I eat " + thing);
 			place.lose(thing);
 		}
-	}
+	}*/
 	
-	//stay here
-	//public void eat(Thing thing) {
-	//	if ((thing.isOwned()) && (thing.getOwner().equals(this))) {
-	//		thing.beEaten();
-	//	} else {
-	//		Utility.displayMessage(this + " does not have " + thing);
-	//	}
-	//}
+	//stay here and fix
+	public void eat(Food food) {
+		if ((food.isOwned()) && (food.getOwner().equals(this))) {
+			food.beEaten(food);
+		} else {
+			Utility.displayMessage(this + " does not have " + food);
+		}
+	}
 	
 	public void lose(Thing thing) {
 		if (!equals(thing.getOwner())) {
