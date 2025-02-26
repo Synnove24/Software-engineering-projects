@@ -1,6 +1,7 @@
 package edu.gac.mcs178.gack;
 
 import edu.gac.mcs178.gack.domain.AutoPerson;
+import edu.gac.mcs178.gack.domain.Food;
 import edu.gac.mcs178.gack.domain.Person;
 import edu.gac.mcs178.gack.domain.Place;
 import edu.gac.mcs178.gack.domain.Scroll;
@@ -54,9 +55,9 @@ public class GackWorld extends World {
 		new Wizard("Elvee", offices, 1, chamberOfWizards);
 		
 		lounge.gain(new Thing("Karl's glasses"));
-		foodService.gain(new Thing("Chocolate"));
-		foodService.gain(new Thing("Chocolate"));
-		alumniHall.gain(new Thing("Chocolate"));
+		foodService.gain(new Food("Chocolate"));
+		foodService.gain(new Food("Chocolate"));
+		alumniHall.gain(new Food("Chocolate"));
 		
 		library.gain(new Scroll("Scroll of Enlightenment"));
 		String[] someTitles = {"War and Peace", "Iliad", "Collected Works of Rilke"};
@@ -65,12 +66,10 @@ public class GackWorld extends World {
 		}
 		
 		
-		
-		
 		computerLab.gain(new Scroll("Unix Programmers Manual"));
 		computerLab.gain(new Scroll("NeXT User's Reference"));
 		dormitory.gain(new Scroll("late Lab Report"));
-		lund.gain(new Scroll("Lous don't barf magical enchantment")); //added test scroll
+		lund.gain(new Scroll("Louis don't barf magical enchantment")); //added test scroll
 		setPlayer(new Person("player", dormitory));
 	}
 }

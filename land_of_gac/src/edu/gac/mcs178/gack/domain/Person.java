@@ -123,25 +123,19 @@ public class Person {
 	}
 	
 
-	/*public void beEaten(Thing thing) {
-		if (!equals(thing.getOwner())) {
-			Utility.displayMessage(this + " doesn't have " + thing);
-		} else {
-			thing.becomeUnowned();
-			possessions.remove(thing);
-			say("I eat " + thing);
-			place.lose(thing);
-		}
-	}*/
 	
-	//stay here and fix
+	//added eat function for person to be able to eat a food then they lose it
 	public void eat(Food food) {
 		if ((food.isOwned()) && (food.getOwner().equals(this))) {
-			food.beEaten(food);
+			food.beEaten();
+			food.becomeUnowned();
+			possessions.remove(food);
+			place.lose(food);
 		} else {
 			Utility.displayMessage(this + " does not have " + food);
 		}
 	}
+	
 	
 	public void lose(Thing thing) {
 		if (!equals(thing.getOwner())) {

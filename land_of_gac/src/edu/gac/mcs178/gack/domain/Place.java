@@ -12,13 +12,11 @@ public class Place {
 	private String name;
 	private Map<String, Place> neighborMap;
 	private List<Thing> contents;
-	private List<Food> foods;
 	private List<Person> occupants;
 	
 	public String getName() { return name; }
 	public void setName(String name) { this.name = name; }
 	public List<Thing> getContents() { return contents; }
-	public List<Food> getfoods() { return foods; }
 	public List<Person> getOccupants() { return occupants; }
 
 	public Place(String name) {
@@ -57,14 +55,6 @@ public class Place {
 		}
 	}
 	
-	//create a gain function for food
-	public void gain(Food newFood) {
-		if (foods.contains(newFood)) {
-			Utility.displayMessage(newFood + " is already at " + this);
-		} else {
-			foods.add(newFood);
-		}
-	}
 	
 	public void gain(Person newPerson) {
 		if (occupants.contains(newPerson)) {
@@ -82,14 +72,6 @@ public class Place {
 		}
 	}
 	
-	//create a lose function for food
-	public void lose(Food food) {
-		if (contents.contains(food)) {
-			contents.remove(food);
-		} else {
-			Utility.displayMessage(food + " is not at " + this);
-		}
-	}
 	
 	public void lose(Person person) {
 		if (occupants.contains(person)) {

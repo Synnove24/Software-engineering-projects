@@ -140,7 +140,7 @@ public class GraphicalUserInterface extends JFrame implements MessageDisplay {
 		
 		beEatenJComboBox = new JComboBox();
 		beEatenActionListener = new BeEatenActionListener(this, player, beEatenJComboBox);
-		beEatenJComboBox.addActionListener(dropActionListener);
+		beEatenJComboBox.addActionListener(beEatenActionListener);
 		controlPanel.add(beEatenJComboBox);
 	}
 	
