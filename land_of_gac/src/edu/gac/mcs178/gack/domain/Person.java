@@ -136,6 +136,10 @@ public class Person {
 		}
 	}
 	
+	public void pet() {
+		say("I pet the cat!");
+	}
+	
 	
 	public void lose(Thing thing) {
 		if (!equals(thing.getOwner())) {

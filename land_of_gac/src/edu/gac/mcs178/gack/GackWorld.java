@@ -1,6 +1,7 @@
 package edu.gac.mcs178.gack;
 
 import edu.gac.mcs178.gack.domain.AutoPerson;
+import edu.gac.mcs178.gack.domain.Cat;
 import edu.gac.mcs178.gack.domain.Food;
 import edu.gac.mcs178.gack.domain.Person;
 import edu.gac.mcs178.gack.domain.Place;
@@ -50,9 +51,11 @@ public class GackWorld extends World {
 		
 		new AutoPerson("Max", offices, 2);
 		new AutoPerson("Karl", computerLab, 4);
-		new Witch("Barbara", offices, 3, pond);
-		new Witch("Jacob", lund, 2, pond); //added witch
+		//new Witch("Barbara", offices, 3, pond);
+		//new Witch("Jacob", lund, 2, pond); //added witch
 		new Wizard("Elvee", offices, 1, chamberOfWizards);
+		
+		new Cat("Kitty", lounge, 1);
 		
 		lounge.gain(new Thing("Karl's glasses"));
 		foodService.gain(new Food("Chocolate"));
