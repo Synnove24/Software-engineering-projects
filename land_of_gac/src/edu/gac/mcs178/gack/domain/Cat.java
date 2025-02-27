@@ -6,6 +6,7 @@ import java.util.List;
 
 import edu.gac.mcs178.gack.Utility;
 
+
 public class Cat extends AutoPerson {
 	
 	private Place lounge;
@@ -17,8 +18,8 @@ public class Cat extends AutoPerson {
 	
 	
 	
-	public void wasPet(Person person) {
-		say("Meow!! ");
+	public static void wasPet() {
+		Utility.displayMessage("Meow!!");
 	}
 	
 	
