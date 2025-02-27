@@ -19,7 +19,7 @@ public class Cat extends AutoPerson {
 	
 	
 	public static void wasPet() {
-		Utility.displayMessage("Meow!!");
+		Utility.displayMessage("Meow!! Here is a chocolate!");
 	}
 	
 	

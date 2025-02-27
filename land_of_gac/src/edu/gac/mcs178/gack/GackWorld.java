@@ -42,6 +42,7 @@ public class GackWorld extends World {
 		goodShipOlin.addNewNeighbor("north", library);
 		goodShipOlin.addNewNeighbor("east", dormitory);
 		goodShipOlin.addNewNeighbor("up", lounge);
+		lounge.addNewNeighbor("down", goodShipOlin);
 		lounge.addNewNeighbor("west", computerLab);
 		lounge.addNewNeighbor("south", offices);
 		computerLab.addNewNeighbor("east", lounge);

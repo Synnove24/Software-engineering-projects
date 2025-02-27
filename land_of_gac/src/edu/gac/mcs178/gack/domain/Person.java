@@ -138,6 +138,7 @@ public class Person {
 	
 	public void pet() {
 		say("I pet the cat!");
+		this.take(new Food("Chocolate"));
 		Cat.wasPet();
 	}
 	
